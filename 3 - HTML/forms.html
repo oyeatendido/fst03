@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Forms</title>
+</head>
+<body>
+    
+    <h1>Creating Forms</h1>
+
+    <form action="">
+        <div>
+            <!-- Name -->
+            <label for="fullname-id">Name:</label>
+            <input
+              type="text"
+              name="user-fullname"
+              id="fullname-id"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+
+          <div>
+            <!-- Email -->
+            <label for="email-id">Email:</label>
+            <input
+              type="text"
+              name="user-email"
+              id="email-id"
+              placeholder="JohnDoe@gmail.com"
+              required
+            />
+          </div>
+
+          <div>
+            <!-- Password -->
+            <label for="password-id">Password:</label>
+            <input
+              type="password"
+              name="user-password"
+              id="password-id"
+              placeholder="***********"
+              required
+            />
+          </div>
+
+          <div>
+            <!-- Number -->
+            <label for="age-id">Age:</label>
+            <input
+              type="number"
+              name="user-age"
+              id="age-id"
+              placeholder="30"
+              required
+              min="18"
+              max="130"
+            />
+          </div>
+<br>
+<label for="message-id">Message:</label>
+          <div>
+            <!-- Message -->
+            
+            <textarea 
+              name="user-message"
+              id="message-id"
+              cols="30"  rows="5"
+              placeholder="What's on your mind?"
+            ></textarea>
+          </div>
+
+          <p> This text is color <span style="color: blue;"> blue.</span>  </p>
+
+
+          <div>
+            <label for="gender-id">Gender:</label>
+          <!-- Dropdown list -->
+           <select name="user-gender" id="gender-id">
+            <option value="0" selected disabled hidden>---Select your Gender---</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+           </select>
+          </div>
+
+
+<br>
+          <div>
+            <!-- Radio Buttons -->
+            <input type="radio" name="profile-status" id="public-id" value="1"/>
+            <label for="public-id">Public</label>
+            <input type="radio" name="profile-status" id="private-id" value="2"/>
+            <label for="private-id">Private</label>
+             
+            
+          </div>
+
+          <br>
+
+          <label>Genres</label>
+
+          <div>
+            <!-- Checkbox: Zero or More options -->
+             <input type="checkbox" name="genre" id="Thriller-id" value="thriller">
+             <label for="Thriller-id">Thriller</label>
+
+             <input type="checkbox" name="genre" id="Action-id" value="action">
+             <label for="Action-id">Action</label>
+
+             <input type="checkbox" name="genre" id="Romance-id" value="romance">
+             <label for="Romance-id">Romance</label>
+
+             <input type="checkbox" name="genre" id="Comedy-id" value="comedy">
+             <label for="Comedy-id">Comedy</label>
+
+             <input type="checkbox" name="genre" id="Anime-id" value="anime">
+             <label for="Anime-id">Anime</label>
+
+
+          
+          </div>
+          <br>
+          
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+    </form>
+
+
+</body>
+</html>
